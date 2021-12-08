@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+        <title>My Websites</title>
+        <style type="text/css">
+      * {
+  box-sizing: border-box;
+}
+      body{
+           margin: 0;
+           padding: 0;
+           background-image: url('1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+       }    
+       header{
+
+           background-color: black;
+           width: 100%;    
+       } 
+.logo{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 35px;
+    margin-left: 50px;
+    padding: 40px;
+
+    
+}.logo a{
+    color: white;
+    text-decoration: none;
+}
+.nav_bar{
+    font-size: 18px;
+    float: right;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav_bar li{
+    display: inline-block;
+}
+.nav_bar li{
+    padding: 20px;
+
+}
+.nav_bar li a:hover{
+  background: #7D7A7A;
+  color:white;
+  border: 1px solid #000;
+  border-radius: 5px; 
+  padding: 5px;
+    
+}
+.gallery{
+margin: 50px;
+}
+.gallery img{
+    padding: 15px;
+    border: 1px solid white;
+    background-color: white;
+    color: white;
+    margin: 16px;
+}
+.gallery h{
+    font-size: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+padding: 10px;
+
+ }
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+</style>
+    </head>
+    <body>
+
+  <header>
+<div class="logo">
+    <a href="#">Jhun Rey Web</a>
+<div class="nav_bar">
+
+    <ul>
+        <li><a href="My Web.html">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="log in.html">log|out</a></li> 
+    </ul>
+</div>
+</div>
+</header>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d748286.2733484542!2d120.32101475753662!3d12.80640770931202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJuan%20luna%20street%2C%20bagong%20sikat%2C%20pinagturilan%2C%20sta.%20Cruz%20occidental%20mindoro!5e1!3m2!1sen!2sph!4v1638976039406!5m2!1sen!2sph" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Philipines">Philipines</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+  
+</div>
+</body>
+</html>
